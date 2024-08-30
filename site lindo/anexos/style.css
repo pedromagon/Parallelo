@@ -1,0 +1,55 @@
+/* Estiliza a lista não ordenada dentro do elemento <nav> */
+nav ul {
+    /* Alinha os itens da lista em uma linha horizontal */
+    display: flex;
+    /* Define a direção dos itens da lista como linha */
+    flex-direction: row;
+    /* Remove a margem padrão */
+    margin: 0;
+    /* Remove o preenchimento padrão */
+    padding: 0;
+}
+
+/* Estiliza os itens da lista dentro do elemento <nav> */
+nav ul li {
+    /* Remove o marcador padrão da lista */
+    list-style: none;
+    /* Define a altura dos itens da lista */
+    height: 125px;
+    /* Adiciona preenchimento à direita dos itens da lista */
+    padding: 0 25px 0 0;
+}
+
+/* Estiliza os itens da lista quando o mouse passa sobre eles */
+nav ul li:hover {
+    /* Define a cor de fundo quando o item da lista é hover */
+    background: #444444;
+}
+
+/* Estiliza o elemento <nav> */
+nav {
+    /* Define a altura do menu de navegação */
+    height: 125px;
+    /* Define a largura máxima do menu de navegação */
+    max-width: 1480px;
+    /* Define a largura mínima do menu de navegação */
+    min-width: 1080px;
+    /* Define a cor de fundo do menu de navegação */
+    background: black;
+}
+
+/* Estiliza o logo dentro do elemento <nav> */
+nav #logo img {
+    /* Define a altura da imagem do logo */
+    height: 75px;
+    /* Adiciona margem ao redor da imagem do logo */
+    margin: 25px;
+    /* Faz com que a imagem do logo flutue para a esquerda */
+    float: left;
+}
+
+/* Estiliza a área de menu principal dentro do elemento <nav> */
+nav #mainmenu {
+    /* Faz com que a área de menu principal flutue para a direita */
+    float: right;
+}
