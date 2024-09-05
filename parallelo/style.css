@@ -1,0 +1,130 @@
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 600px;
+    
+}
+nav{
+    margin: 0 auto;
+    position: absolute;  /* Deixa o menu travado em cima */
+    top: 15px;
+    width: 100%; /* Define a largura máxima do menu */
+    min-width: 1080px; /* Define a largura mínima do menu */
+    
+}
+nav #mainMenu-geral{
+    max-width: 1480px;
+    height: 125px; /* Define a altura da barra de navegação */
+    margin: 0 auto;
+    background-color: black; /* Define a cor de fundo do menu como preto */
+}
+
+nav ul {  /* Estiliza a lista não ordenada dentro da tag <nav> */
+    display: flex; /* Alinha os itens em uma linha horizontal */
+    flex-direction: row; /* Define a direção dos itens na linha */
+    margin: 0; /* Remove a margem padrão do navegador */
+    padding: 0; /* Remove o preenchimento padrão do navegador */
+}
+
+nav ul li { /* Estiliza cada item da lista dentro da tag <nav> */
+    list-style: none; /* Remove a marcação padrão da lista (bolinhas) */
+    height: 125px; /* Define a altura dos itens para se alinhar com o menu */
+    transition: all 1s;
+    
+}
+
+nav ul li:hover { /* Adiciona efeito de hover nos itens da lista */
+    background-color: #444444; /* Muda a cor de fundo quando o item é sobreposto */
+    transition: all 1s;
+}
+nav ul li span{
+    float: left;
+    color: #868686;
+    font-size: 11px;
+    margin: 58px 3px 53px 15px;
+}
+nav ul li a{
+    color: white;
+    font-size: 16px;
+    text-transform: uppercase; /* mesmo que escreve em minúsculo aparecerá em maiúsculo */
+    text-decoration: none;
+    padding: 53px 15px 53px 0;
+    float: left;
+    transition: all 1s;
+}
+nav ul li a:hover{
+    text-decoration: line-through;
+    color: yellow;
+    transition: all 1s;
+}
+
+nav ul li a span{
+    font-size: 11px;
+    color: #868686;
+    margin: 5px 3px 0 0;
+}
+
+nav #logo img { /* Estiliza a imagem do logo dentro da tag <nav> */
+    height: 75px; /* Define a altura da imagem do logo */
+    margin: 25px; /* Adiciona margem ao redor da imagem */
+    float: left; /* Alinha a logo à esquerda do menu */
+}
+
+nav #mainMenu { /* Estiliza o menu principal */
+    float: right; /* Alinha o menu à direita da barra de navegação */
+}
+
+.montserrat, nav ul li a{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+header{
+    width: 100%;
+    height: 600px;
+}
+header .slide{
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    position: absolute;
+    z-index: -1;    
+}
+header #slide-bar{
+    margin-top: 320px;
+    height: 280px;
+    float: left;
+    background-image: url(../img/yellow-bg.png);
+    width: 625px;
+    padding: 0 0 0 60px;
+    
+}
+header #txt_slide{
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    margin-top: 50px;
+    color: white;
+    text-transform: uppercase;
+}
+header #titulo_slide{
+    font-size: 50px;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+}
+header #titulo_slide h4{
+    margin: 30px 0;
+} 
+header .seta{
+    float: left;
+}
+header .direita{
+    margin-left: 20px;
+}
+.separador{
+    width: 100%;
+    height: 300px;
+    background-image: url(../img/divider-dark.png);
+    background-repeat: repeat-x;
+}
